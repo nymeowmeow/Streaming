@@ -31,6 +31,7 @@ You may choose to create your project in the workspace we provide here, or if yo
 ## Questions
 
 1. How did changing values on the SparkSession property parameters affect the throughput and latency of the data?
+
 by tweaking the value for spark.default.parallelism, spark.sql.shuffle.partitions and spark.streaming.kafka.maxRatePerPartition, it is observed the processedRowsperSecond which measure the throughput, the Duration for triggerExecution, and the duration reported in sparkui which measure the latency changes depending on the parameter set.
 
 2. What were the 2-3 most efficient SparkSession property key/value pairs? Through testing multiple variations on values, how can you tell these were the most optimal?
